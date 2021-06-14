@@ -1,0 +1,55 @@
+<aside class="left-sidebar bg-light">
+  <!-- Sidebar scroll-->
+  <div class="scroll-sidebar">
+    <!-- Sidebar navigation-->
+    <nav class="sidebar-nav bg-light">
+      <li class="user-profile">
+        <a class="bg-light" aria-expanded="false"><img src="./assets/img/users/profile.png" alt="user"/>
+          <span class="hide-menu">{{authService.usuario.persona.nombre +" " + authService.usuario.persona.apellidos}}</span></a>
+        <ul aria-expanded="false" class="collapse">
+        </ul>
+      </li>
+      <hr>
+      <ul id="sidebarnav">
+        <li><a class=" " routerLink="./editarperfil" routerLinkActive="active-link"
+               aria-expanded="false"><i class="mdi mdi-tooltip-edit"></i>
+          <span class="hide-menu">Editar Perfil</span></a>
+        </li>
+        <li><a class=" waves-effect waves-dark" routerLink="./graduados" routerLinkActive="active-link"
+               aria-expanded="false"><i class="mdi mdi-school"></i>
+          <span class="hide-menu">Graduados</span></a>
+        </li>
+        <li><a class=" waves-effect waves-dark" routerLink="./empresas" routerLinkActive="active-link"
+               aria-expanded="false"><i
+          class="mdi mdi-domain"></i>
+          <span class="hide-menu">Empresas</span></a>
+        </li>
+        <li><a class=" waves-effect waves-dark" routerLink="./ofertalaboral" routerLinkActive="active-link"
+               aria-expanded="false"><i
+          class="mdi mdi-briefcase"></i>
+          <span class="hide-menu">Ofertas Laborales</span></a>
+        </li>
+        <li><a class=" waves-effect waves-dark" href="#" routerLinkActive="active-link" aria-expanded="false"><i
+          class="mdi mdi-file-document-box"></i>
+          <span class="hide-menu">Encuestas</span></a>
+        </li>
+        <li><a class="waves-effect waves-dark" routerLink="./reportes" routerLinkActive="active-link"
+               aria-expanded="false"><i
+          class="mdi mdi-chart-histogram"></i>
+          <span class="hide-menu">Reportes</span></a>
+        </li>
+        <li><a class=" waves-effect" routerLink="./noticias" routerLinkActive="active-link" aria-expanded="false"><i
+          class="mdi mdi-newspaper"></i>
+          <span class="hide-menu">Noticas y Eventos</span></a>
+        </li>
+        <li><a class=" waves-effect waves-dark" routerLink="./backupsadmin" href="#" aria-expanded="false"><i class="mdi mdi-folder-move"></i>
+          <span class="hide-menu">Backups</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Sidebar navigation -->
+  </div>
+  <!-- End Sidebar scroll-->
+</aside>
+
+

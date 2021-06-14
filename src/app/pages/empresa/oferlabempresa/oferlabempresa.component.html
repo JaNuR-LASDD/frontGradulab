@@ -1,0 +1,245 @@
+<div class="col-md-12">
+  <div class="card">
+    <div class="card-body p-b-0">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs customtab" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#crearoferta" role="tab"><span
+          class="hidden-sm-up"><i class="ti-home"></i></span> <span
+          class="hidden-xs-down">Crear Oferta Laboral</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#listaroferta" role="tab"><span
+          class="hidden-sm-up"><i class="ti-user"></i></span> <span
+          class="hidden-xs-down">Ofertas Publicadas</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#candidatos" role="tab"><span
+          class="hidden-sm-up"><i class="ti-user"></i></span> <span
+          class="hidden-xs-down">Candidatos</span></a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="crearoferta" role="tabpanel">
+          <div class="p-20">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <form>
+                      <div class="form-body">
+                        <div class="row p-t-20">
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Nombre Oferta:</label>
+                              <div class="col-md-10">
+                                <input type="text" id="nombreofe" class="form-control"
+                                       placeholder="Ingeniero de Sistemas">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Descripción:</label>
+                              <div class="col-md-10">
+                                <textarea class="form-control" rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Requisitos:</label>
+                              <div class="col-md-10">
+                                <textarea class="form-control" rows="4"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Ubicación:</label>
+                              <div class="col-md-10">
+                                <input type="text" id="ubicacion" class="form-control" placeholder="Bogota, Colombia">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-actions">
+                        <button type="submit" class="ufps-btn ufps-btn-green float-right"><i class="fa fa-check"></i>
+                          Guardar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane  p-20" id="listaroferta" role="tabpanel">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar por nombre de oferta">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 p-20">
+              <ul class="list-unstyled">
+                <li class="media">
+                  <div class="media-body">
+                    <div class="d-flex flex-row comment-row">
+                      <div class="comment-text w-100">
+                        <h2>Desarrollador Java</h2>
+                        <div class="comment-footer">
+                          <span class="date">April 14, 2016</span>
+                        </div>
+                        <p class="m-b-5 m-t-10">Lorem Ipsum is simply dummy text of the printing and type setting
+                          industry. Lorem Ipsum has beenorem Ipsum is simply dummy text of the printing and type setting
+                          industry.</p>
+                      </div>
+                    </div>
+                    <div class="float-right">
+                      <a data-toggle="modal" data-target="#editar-modal" class="ufps-btn ufps-btn-light">Editar</a>
+                      <a data-toggle="modal" data-target="#eliminar-modal" class="ufps-btn ufps-btn-green text-white">Finalizar
+                        Oferta</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane  p-20" id="candidatos" role="tabpanel">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar por nombre de oferta">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md-12 p-20">
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <div class="media-body">
+                      <h1 class="mt-0 mb-1">Desarrollador Java Junior</h1>
+                      <div class="media mt-3">
+                        <a class="d-flex pr-3" href="#">
+                        </a>
+                        <div class="media-body">
+                          <h2 class="mt-0"> Javier Numa</h2>
+                          <h4>javiernuma98@gmail.com</h4>
+                          <h4>3026523456</h4>
+                          <h4>Estado</h4>
+                          <div class=" float-right">
+                            <button type="button" class="ufps-btn ufps-btn-light" data-dismiss="modal">Siguiente Estado</button>
+                            <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Descargar HV</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-12 p-20">
+              <ul class="list-unstyled">
+                <li class="media">
+                  <div class="media-body">
+                    <h1 class="mt-0 mb-1">Desarrollador Java Senior</h1>
+                    <div class="media mt-3">
+                      <a class="d-flex pr-3" href="#">
+                      </a>
+                      <div class="media-body">
+                        <h2 class="mt-0"> Javier Numa</h2>
+                        <h4>javiernuma98@gmail.com</h4>
+                        <h4>3026523456</h4>
+                        <h4>Estado</h4>
+                        <div class=" float-right">
+                          <button type="button" class="ufps-btn ufps-btn-light" data-dismiss="modal">Siguiente Estado</button>
+                          <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Descargar HV</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="editar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Editar Oferta de Empleo</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="form-group row">
+            <label class="control-label text-left col-md-3">Nombre Oferta:</label>
+            <div class="col-md-9">
+              <input type="text" id="editnombreofe" class="form-control" placeholder="Ingeniero de Sistemas">
+            </div>
+          </div>
+            <div class="form-group row">
+              <label class="control-label text-left col-md-3">Descripción:</label>
+              <div class="col-md-9">
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+          </div>
+            <div class="form-group row">
+              <label class="control-label text-left col-md-3">Requisitos:</label>
+              <div class="col-md-9">
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label text-left col-md-3">Ubicación:</label>
+              <div class="col-md-9">
+                <input type="text" id="editubicacion" class="form-control" placeholder="Bogota, Colombia">
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="ufps-btn" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-example-modal-sm" id="eliminar-modal" tabindex="-1" role="dialog"
+     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mySmallModalLabel">Cerrar Oferta</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body"> Esta seguro de cerrar la oferta</div>
+      <div class="modal-footer">
+        <button type="button" class="ufps-btn" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

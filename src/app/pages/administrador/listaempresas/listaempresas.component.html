@@ -1,0 +1,175 @@
+<div class="col-md-12">
+  <div class="card">
+    <div class="card-body p-b-0">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs customtab" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#solictudregisempre" role="tab"><span
+          class="hidden-sm-up"><i class="ti-home"></i></span> <span
+          class="hidden-xs-down"><h3>Solicitud de registro</h3></span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#solofertaempre" role="tab"><span
+          class="hidden-sm-up"><i class="ti-user"></i></span> <span
+          class="hidden-xs-down"><h3>Solcitar Publicar Oferta Laboral</h3></span></a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active " id="solictudregisempre" role="tabpanel">
+          <div class="p-20">
+            <div class="row">
+              <div class="col-md-12 p-20">
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <div class="media-body">
+                      <div class="d-flex flex-row comment-row">
+                        <div class="comment-text w-100">
+                          <div class="comment-footer">
+                            <h2>Ceiba Software</h2>
+                          </div>
+                          <h5><p class="m-b-5 m-t-10">Email: YiselPinedasuecun@gmail.com</p></h5>
+                          <h5><p>Revisar que mas información se va a gregar acá</p></h5>
+                        </div>
+                      </div>
+                      <div class="form-actions float-right">
+                        <button class="ufps-btn">Rechazar</button>
+                        <button class="ufps-btn ufps-btn-green ">Aceptar</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane " id="solofertaempre" role="tabpanel">
+          <div class="p-20">
+            <div class="row">
+              <div class="col-md-12 p-20">
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <div class="media-body">
+                      <div class="d-flex flex-row comment-row">
+                        <div class="comment-text w-100">
+                          <div class="comment-footer">
+                            <h1>Ingeniero de sistemas .NET</h1>
+                          </div>
+                          <h5><p class="m-b-5 m-t-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque velit
+                            alias obcaecati suscipit optio,
+                            id numq Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque velit alias obcaecati
+                            suscipit optio, id numq </p></h5>
+                        </div>
+                      </div>
+                      <div class="form-actions float-right">
+                        <button data-toggle="modal" data-target="#editar-modal" class="ufps-btn">Rechazar</button>
+                        <button data-toggle="modal" data-target="#editar-modal" class="ufps-btn ufps-btn-green waves-effect waves-light">Aceptar</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="editar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Enviar Notificación</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="row p-t-20">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="lead">Asunto:</label>
+                <input type="text" placeholder="Escriba su asunto" class="form-control form-control-lg" id="asnt">
+              </div>
+              <div class="form-group">
+                <label class="lead">Mensaje:</label>
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="ufps-btn" data-dismiss="modal">No Enviar</button>
+                <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="container"> -->
+<!--Titulo de las tabs inicio -->
+<!--<div class="ufps-tab-container" id="tabs">
+  <ul class="ufps-tabs">
+    <li><a class="ufps-tab-links ufps-tab-active" onclick="openTab(event, 'tab1', 'tabs')">Solicitud de registro empresa</a></li>
+    <li><a class="ufps-tab-links" onclick="openTab(event, 'tab2', 'tabs')">Solicitud publicar oferta laboral </a></li>
+  </ul>-->
+<!--Titulo de las tabs fin-->
+
+<!-- Contenido de las tabs -->
+<!-- <div id="tab1" class="ufps-tab-content" style="display: block;">
+   <div class="ufps-row">
+     <div class="ufps-col-mobile-12 ufps-col-tablet-6 ">
+           <div class="ufps-card">
+             <div class="ufps-card-caption">
+               <h4>Solicitudes de Registro</h4>
+               <p>Nombre: T.N.S</p>
+               <p>Usuario: Empresa</p>
+               <button class="ufps-btn">Rechazar</button>
+               <button class="ufps-btn ufps-btn-green ">Aceptar</button>
+             </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div id="tab2" class="ufps-tab-content ">
+   <div class="ufps-row">
+       <div class="ufps-card" style=" padding: 40px;">
+         <h1>Ingeniero de sistemas .NET</h1>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque velit alias obcaecati suscipit optio, id numquam quaerat necessitatibus vitae illum dicta ratione laudantium officia culpa! Dolore unde libero earum quaerat?
+         <button class="ufps-btn" data-toggle="modal" data-target="#modalacept" style="float:right">Rechazar</button>
+         <button class="ufps-btn ufps-btn-green " data-toggle="modal" data-target="#modalacept" style="float:right">Aceptar</button>
+       </div>
+   </div>
+ </div>-->
+<!--</div>--><!--fin Contenido de las tabs -->
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="modalacept" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h3 class="modal-title" id="exampleModalLabel">Enviar notificación</h3>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <div class="form-group">
+           <label for="sector" class="lead">Asunto:</label>
+           <input type="text" placeholder="Escriba su asunto" class="form-control form-control-lg" id="asnt">
+         </div>
+         <div class="form-group">
+           <label for="sector" class="lead">Mensaje:</label>
+           <input type="text" placeholder="Escriba su mensaje" class="clasein form-control form-control-lg" id="msj">
+         </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+         <button type="button" class="btn btn-success">Enviar</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</div>
+<script>$('#textarea').autoResize();</script>-->

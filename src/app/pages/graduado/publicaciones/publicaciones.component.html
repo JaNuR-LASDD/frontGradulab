@@ -1,0 +1,224 @@
+<div class="col-md-12">
+  <div class="card">
+    <div class="card-body p-b-0">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs customtab" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#publicaciones" role="tab"><span
+          class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Publicaciones</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#miperfil" role="tab"><span
+          class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Mi Perfil</span></a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane p-20 active" id="publicaciones" role="tabpanel">
+          <div class="row">
+            <cdk-virtual-scroll-viewport itemSize="100" class="viewport" (scrolledIndexChange)="onScroll()">
+              <div class="card gedf-card"  *cdkVirtualFor="let pub of myPublicaciones.list">
+                <div class="card-header">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="mr-2">
+                        <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                      </div>
+                      <div class="ml-2">
+                        <div class="h5 m-0">Johana Cristancho</div>
+                        <div class="h7 text-muted"><i class="fa fa-clock"></i> 10 min ago</div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-body">
+                  <img *ngIf="pub?.multimedia" src="{{urlImage}}{{pub.multimedia}}" alt="imagen" width="500" height="333">
+                  <p class="card-text">
+                   {{pub.contenido}}
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button (click)="meGusta(pub)" class="card-link text-black-50"><i class="fa fa-thumbs-up" aria-hidden=true></i>{{" "+pub.cantidadMegusta}}</button>
+                  <button (click)="meEncanta(pub)" class="card-link text-black-50"><i class="fa fa-heart" aria-hidden="true"></i>{{" "+pub.catidadMencanta}}</button>
+                  <a href="#" class="card-link text-black-50"><i class="fa fa-comments" aria-hidden="true"></i>{{" "+pub.cantidadComentario}}`</a>
+                  <hr>
+                  <div class="col-md-12">
+                    <div class="input-group clockpicker">
+                      <input [(ngModel)]="pub.comentario" type="text" class="form-control" placeholder="comentar"> <button (click)="comentar(pub)"
+                      class="input-group-addon"> <span   class="fa fa-paper-plane" aria-hidden="true"></span> </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </cdk-virtual-scroll-viewport>
+
+          </div>
+        </div>
+        <div class="tab-pane  p-20" id="miperfil" role="tabpanel">
+          <div class="row">
+            <div class="col-md-12  media">
+              <div class="col-md-12">
+                <div class="form-group row">
+                  <label class="control-label text-left col-md-2">Contenido:</label>
+                  <div class="col-md-10">
+                    <textarea [(ngModel)]="ultimaPublicacion.contenido" name="contenido" class="form-control" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label text-left col-md-2">Imagen</label>
+                  <div class="col-md-10">
+                    <input (change)="seleccionarFoto($event)"  name="foto" type="file" class="form-control" id="imagen" >
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label text-left col-md-2">Link Video</label>
+                  <div class="col-md-10">
+                    <input type="text" id="link" class="form-control" placeholder="https:viedo">
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button (click)="publicarSinMultiomedia()" type="submit" class="ufps-btn ufps-btn-green float-right"><i class="fa fa-check"></i>
+                    Publicar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card gedf-card">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="mr-2">
+                      <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                    </div>
+                    <div class="ml-2">
+                      <div class="h5 m-0">Johana Cristancho</div>
+                      <div class="h7 text-muted"><i class="fa fa-clock"></i> 10 min ago</div>
+                    </div>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
+                  praesentium esse magnam nemo dolor
+                  sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link text-black-50"><i class="fa fa-thumbs-up" aria-hidden=true></i> 2</a>
+                <a href="#" class="card-link text-black-50"><i class="fa fa-heart" aria-hidden="true"></i> 2</a>
+                <a href="#" class="card-link text-black-50"><i class="fa fa-comments" aria-hidden="true"></i> 2</a>
+                <div class="float-right">
+                  <a data-toggle="modal" data-target="#editar-modal" class="ufps-btn ufps-btn-light">Editar</a>
+                  <a data-toggle="modal" data-target="#eliminar-modal" class="ufps-btn text-white">Eliminar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="editar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Editar Publicación</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="row p-t-20">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="control-label">Título:</label>
+                <input type="text" id="edit-titulo" class="form-control" placeholder="Cafetic">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Descripción:</label>
+            <textarea class="form-control" rows="5"></textarea>
+          </div>
+          <fieldset class="form-group">
+            <label>Imagen:</label>
+            <label class="custom-file d-block">
+              <input type="file" id="files" class="custom-file-input">
+              <span class="custom-file-control"></span>
+            </label>
+          </fieldset>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label">Categoría</label>
+                <select class="form-control custom-select" style="font-size: 14px"
+                        data-placeholder="Choose a Category"
+                        tabindex="1">
+                  <option value="edit-noticia">Noticia</option>
+                  <option value="edit-evento">Evento</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label">Fecha</label>
+                <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <div class="row">
+            <!--/span-->
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label">Tipo</label>
+                <div class="form-check">
+                  <label class="custom-control custom-radio">
+                    <input id="edit-radio1" name="radio" type="radio" checked class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Principal</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="edit-radio2" name="radio" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Secundaria</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="ufps-btn" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-example-modal-sm" id="eliminar-modal" tabindex="-1" role="dialog"
+     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mySmallModalLabel">Eliminar Publicación</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body"> Esta seguro de eliminar la publicación</div>
+      <div class="modal-footer">
+        <button type="button" class="ufps-btn" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,100 @@
+<div id="intro" class="bg-image shadow-2-strong">
+  <div class="mask d-flex align-items-center h-100" >
+    <div class="container">
+      <div class="row justify-content-center align-items-center minh-100">
+        <div class="col-sm-5">
+          <div class="card">
+            <div class="ufps-tab-container" id="tabs"><!--Titulo de las tabs inicio-->
+              <ul class="ufps-tabs center">
+                <li style="background-color:rgba(52, 63, 73, 0.5);"><a class="ufps-tab-links ufps-tab-active" onclick="openTab(event, 'tab1', 'tabs')"><h2>REGISTRO DE EMPRESA</h2></a></li>
+                <li style="background-color:rgba(52, 63, 73, 0.5);"><a class="ufps-tab-links" onclick="openTab(event, 'tab2', 'tabs')"><h2>REGISTRO CONTACTO DE EMPRESA</h2></a></li>
+              </ul>
+              <div id="tab1" class="ufps-tab-content " style="display: block;"><!--inicio Contenido de las tab 1 -->
+                <div class="ufps-row">
+                  <div class="ufps-card">
+                    <div class="card-body">
+                      <form>
+                        <div class=" form-group">
+                          <label class=" lead ">Razón Social <span class="text-danger">*</span> </label>
+                          <input type="text" placeholder="Digite la razon social" class="form-control form-control-lg" id="nombre">
+                        </div>
+                        <div class="form-group">
+                          <label for="nit" class="lead">Nit <span class="text-danger">*</span></label>
+                          <input type="text" placeholder="Digite el Nit" class="form-control form-control-lg" id="nit">
+                        </div>
+                        <div class="form-group">
+                          <label for="sector" class="lead">Sector <span class="text-danger">*</span></label>
+                          <input type="text" placeholder="Digite el sector" class="form-control form-control-lg" id="sector">
+                        </div>
+                        <div class="form-group">
+                          <label for="ubicacion" class="lead">Ubicación <span class="text-danger">*</span></label>
+                          <input type="text" placeholder="Digite la ubicacion" class="form-control form-control-lg" id="ubicacion">
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="lead">Email corporativo <span class="text-danger">*</span></label>
+                          <input type="email" placeholder="Digite el email" class="form-control form-control-lg" id="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="celular" class="lead">Celular <span class="text-danger">*</span></label>
+                          <input type="text" placeholder="Digite el numero celular"class="form-control form-control-lg" id="celular">
+                        </div>
+                        <div class="form-group">
+                          <label for="contraseña" class="lead">Contraseña <span class="text-danger">*</span></label>
+                          <input type="password" placeholder="Digite la contraseña" class="form-control form-control-lg" id="contraseña">
+                        </div>
+                        <div class="form-group">
+                          <label for="confcontraseña" class="lead">Confirmar Contraseña <span class="text-danger">*</span></label>
+                          <input type="password" placeholder="Confirme su contraseña" class="form-control form-control-lg" id="confcontraseña">
+                        </div>
+                        <div class="d-grid gap-2">
+                          <a class="ufps-tab-links" onclick="openTab(event, 'tab2', 'tabs')"><button type="button" class="btn btn-secondary btn-lg btn-block ufps-tab-links">Continuar</button></a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div><!--fin Contenido de las tab 1 -->
+
+              <div id="tab2" class="ufps-tab-content"><!--inicio Contenido de las tab 2 -->
+                <div class="ufps-row">
+                  <div class="ufps-card">
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="nombres" class="lead">Nombres <span class="text-danger">*</span></label>
+                          <input type="text " placeholder="Digite el nombre " class="form-control form-control-lg ">
+                        </div>
+                        <div class="form-group">
+                          <label for="apellidos" class="lead">Apellidos <span class="text-danger">*</span></label>
+                          <input type="number " placeholder="Digite los apellidos " class="form-control form-control-lg ">
+                        </div>
+                        <div class="form-group">
+                          <label for="cedulacontact" class="lead">Cedula <span class="text-danger">*</span></label>
+                          <input type="number " placeholder="Digite la cedula " class="form-control form-control-lg ">
+                        </div>
+                        <div class="form-group">
+                          <label for="emailcontact" class="lead">Email <span class="text-danger">*</span></label>
+                          <input type="email " placeholder="Digite el correo electronico " class="form-control form-control-lg ">
+                        </div>
+                        <div class="form-group">
+                          <label for="celularcontact" class="lead">Celular <span class="text-danger">*</span></label>
+                          <input type="number " placeholder="Digite el numero celular " class="form-control form-control-lg ">
+                        </div>
+                        <div class="form-group">
+                          <label for="telefonocontact" class="lead">Telefono <span class="text-danger">*</span></label>
+                          <input type="number " placeholder="Digite el numero de telefono " class="form-control form-control-lg ">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Registrar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--fin Contenido de las tab 2 -->
+
+            </div><!--Titulo de las tabs fin-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

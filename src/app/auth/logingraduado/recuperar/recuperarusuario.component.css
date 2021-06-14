@@ -1,0 +1,14 @@
+.row{
+  margin-bottom: 170px;
+  margin-top: 110px;
+  margin-left: 0px;
+}
+
+.text-left{
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#login {
+  background-image: url(src/assets/img/login-register.jpg);
+}

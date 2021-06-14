@@ -1,0 +1,149 @@
+<div class="col-md-12">
+  <div class="card">
+    <div class="card-body p-b-0">
+      <div class="tab-content">
+        <div class="tab-pane active" id="personal" role="tabpanel">
+          <div class="p-20">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <form>
+                      <div class="form-body">
+                        <h3 class="card-title">Editar Información</h3>
+                        <hr class="m-t-0 m-b-40">
+                        <div class="row">
+                          <div class="col-md-12">
+                              <div class="text-center"><img src="./assets/img/users/1.jpg" alt="user" class="img-circle" width="100" /></div>
+                          </div>
+                          <div class="col-sm-12 text-center p-20">
+                            <h3 class="font-medium">Nombre Dr de programa</h3>
+                            <a data-toggle="modal" data-target="#cambiarfoto-modal" class="ufps-btn ufps-btn-light">Cambiar Foto</a>
+                          </div>
+                          <div>
+                          </div>
+                        </div>
+                        <div class="row p-30">
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Nombres</label>
+                              <div class="col-md-10">
+                                <input type="text" id="nombres" class="form-control" placeholder="Ejemplo">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Apellidos</label>
+                              <div class="col-md-10">
+                                <input type="text" id="apellidos" class="form-control" placeholder="Perez">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Email</label>
+                              <div class="col-md-10">
+                                <input type="text" id="email" class="form-control" placeholder="ejemplo@gmail.com">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Titulo</label>
+                              <div class="col-md-10">
+                                <input type="text" id="titulo" class="form-control" placeholder="Ingeniero de Sistemas">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Telefono</label>
+                              <div class="col-md-10">
+                                <input type="text" id="telefono" class="form-control" placeholder="58490000">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Celular</label>
+                              <div class="col-md-10">
+                                <input type="text" id="celular" class="form-control" placeholder="300000000">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-actions">
+                          <button type="submit" class="ufps-btn ufps-btn-green float-right"><i class="fa fa-check"></i>
+                            Actualizar
+                          </button>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-body">
+                        <h3 class="card-title">Seguridad</h3>
+                        <hr class="m-t-0 m-b-40">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Contraseña</label>
+                              <div class="col-md-10">
+                                <input type="text" id="contraseña" class="form-control" placeholder="******">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="control-label text-left col-md-2">Confirmar Contraseña</label>
+                              <div class="col-md-10">
+                                <input type="text" id="confcontraseña" class="form-control" placeholder="******">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br><br>
+                      <div class="form-actions">
+                        <button type="submit" class="ufps-btn ufps-btn-green float-right"><i class="fa fa-check"></i>
+                          Cambiar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cambiarfoto-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">CambIar Foto</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="row p-t-20">
+            <div class="col-md-12">
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="file" class="form-control" id="exampleInputFile" aria-describedby="fileHelp">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="ufps-btn" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="ufps-btn ufps-btn-green waves-effect waves-light">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,13 @@
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar{
+  padding-top: 0;
+  padding: 0;
+}
+
+.card{
+  margin-top: 500px;
+}

@@ -1,0 +1,27 @@
+#footer{
+    height: 130px;
+  }
+
+#f{
+  margin-right: 10px;
+  font-size: 20px;
+  color:#7c9ffd;
+}
+
+#i{
+  margin-right: 10px;
+  font-size: 20px;
+  color:rgb(250, 129, 206);
+}
+
+#y{
+  margin-right: 10px;
+  font-size: 20px;
+  color:rgb(255, 94, 94);
+}
+
+#pg{
+  margin-right: 10px;
+  font-size: 20px;
+  color:rgb(214, 214, 214);
+}

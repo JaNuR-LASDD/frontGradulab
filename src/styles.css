@@ -1,0 +1,8 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.form-control {
+  font-size: 14px;
+}
+
+.custom-select {
+  font-size: 14px;
+}

@@ -1,0 +1,336 @@
+<div class="container"><!--inicio Container -->
+  <!--Titulo de las tabs inicio -->
+  <div class="ufps-tab-container" id="tabs">
+    <ul class="ufps-tabs">
+      <li><a class="ufps-tab-links ufps-tab-active" onclick="openTab(event, 'tab1', 'tabs')"> Cuenta</a></li>
+      <li><a class="ufps-tab-links" onclick="openTab(event, 'tab2', 'tabs')">Información Personal</a></li>
+      <li><a class="ufps-tab-links" onclick="openTab(event, 'tab3', 'tabs')">Información academica</a></li>
+      <li><a class="ufps-tab-links" onclick="openTab(event, 'tab4', 'tabs')">Información laboral</a></li>
+    </ul>
+    <!--Titulo de las tabs fin-->
+
+    <!-- Contenido de las tabs -->
+    <div id="tab1" class="ufps-tab-content " style="display: contents;">
+      <div class="ufps-row">
+        <div class="ufps-col-mobile-12 ufps-col-tablet-6 ufps-col-netbook-6">
+          <h1>Información Basica</h1>
+          <div class="ufps-card" style="height: 500px; width: 500px; border-radius: 2em; padding: 10px;">
+            <div class="ufps-card-caption">
+              <div class="ufps-col-mobile-12 ">
+                <form >
+                  <div class="form-group">
+                    <label>Nombres*:</label>
+                    <input type="text" placeholder="Digite el nombre" class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Apellidos*:</label>
+                    <input type="text" placeholder="Digite el apellido" class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Email*:</label>
+                    <input type="mail" placeholder="Digite el correo electronico" class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Titulo*:</label>
+                    <input type="text" placeholder="Digite el titulo " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Telefono*:</label>
+                    <input type="number" placeholder="Digite el numero telefono" class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Celular*:</label>
+                    <input type="number" placeholder="Digite el numero celular" class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Codigo*:</label>
+                    <input type="number" placeholder="Digite el codigo del graduado" class="ufps-input">
+                  </div>
+                  <button class="ufps-btn ufps-btn-green " style="float: right;">Guardar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Biografa y Enlaces Externos inicio -->
+      <div class="ufps-row" style="padding-top: 18px;" >
+        <div class="ufps-col-mobile-12 ufps-col-tablet-6 ufps-col-netbook-6">
+          <h1>Biografa y Enlaces Externos </h1>
+          <div class="ufps-card" style="height: 410px; width: 500px; border-radius: 2em; padding: 10px;">
+            <div class="ufps-card-caption">
+              <div class="ufps-col-mobile-12">
+                <form >
+                  <div class="form-group">
+                    <label>Biografia:</label>
+                    <input type="text" placeholder="
+                       Lorem ipsum, dolor sit amet consectetur
+                       adipisicing elit. Sed, aperiam modi ab alias
+                       deleniti, harum nisi nostrum temporibus velit
+                       tempore doloribus cumque ipsam distinctio dolor
+                       incidunt consequatur odit, nulla cupiditate."
+                           class="ufps-input" style="height: 80px;">
+
+                  </div>
+                  <div class="form-group">
+                    <label >Facebook:</label>
+                    <input type="text" placeholder="" class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label >Twitter:</label>
+                    <input type="mail" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label >linkedin:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label >Web persona:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <button class="ufps-btn ufps-btn-green " style="float: right;">Guardar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- fin Biografa y Enlaces Externos -->
+
+      <!--seguridad inicio -->
+      <div class="ufps-row" style="padding-top: 18px;" >
+        <div class="ufps-col-mobile-12 ufps-col-tablet-6 ufps-col-netbook-6">
+          <h1>Seguridad </h1>
+          <div class="ufps-card" style="height: 177px; width: 500px; border-radius: 2em; padding: 10px;">
+            <div class="ufps-card-caption">
+              <div class="ufps-col-mobile-12 ">
+                <form >
+                  <div class="form-group">
+                    <label >Contraseña:</label>
+                    <input type="password" placeholder="*"class="ufps-input" >
+                  </div>
+                  <div class="form-group">
+                    <label >Confirmar contraseña:</label>
+                    <div>
+                      <input type="password" placeholder="" class="ufps-input">
+                    </div>
+                  </div>
+                  <button class="ufps-btn ufps-btn-green " style="float: right;">Guardar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- fin seguridad -->
+    </div><!-- fin tab 1 -->
+
+    <div id="tab2" class="ufps-tab-content"> <!--tab2 inicio -->
+      <div class="ufps-row" style="padding-top: 18px;" >
+        <div class="ufps-col-mobile-12 ufps-col-tablet-6 ufps-col-netbook-6">
+          <h1>Información personal </h1>
+          <div class="ufps-card" style="height: 500px; width: 500px; border-radius: 2em; padding: 10px;">
+            <div class="ufps-card-caption">
+              <div class="ufps-col-mobile-12 ">
+                <form>
+                  <div class="form-group">
+                    <label>Pais de residencia </label>
+                    <div class="ufps-dropdown" id="dropdown1">
+                      <button onclick="openDropdown('dropdown1')" class="ufps-dropdown-btn ufps-dropdown-light" style="width: 400px; border: solid;">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Departamento </label>
+                    <div class="ufps-dropdown" id="dropdown2">
+                      <button onclick="openDropdown('dropdown2')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Ciudad </label>
+                    <div class="ufps-dropdown" id="dropdown3">
+                      <button onclick="openDropdown('dropdown3')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Dirección:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Estado civil </label>
+                    <div class="ufps-dropdown" id="dropdown4">
+                      <button onclick="openDropdown('dropdown4')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Tiene hijos </label>
+                    <div class="ufps-dropdown" id="dropdown5">
+                      <button onclick="openDropdown('dropdown5')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Contacto de Familiar:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+
+
+                  <button class="ufps-btn ufps-btn-green " style="float: right;">Guardar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- fin tab2 -->
+
+    <div id="tab3" class="ufps-tab-content"> <!--tab3 inicio -->
+      <div class="ufps-row" style="padding-top: 18px;" >
+        <div class="ufps-col-mobile-12 ufps-col-tablet-6 ufps-col-netbook-6">
+          <h1>Información Academica </h1>
+          <div class="ufps-card" style="height: 500px; width: 500px; border-radius: 2em; padding: 10px;">
+            <div class="ufps-card-caption">
+              <div class="ufps-col-mobile-12 ">
+                <form >
+                  <div class="form-group">
+                    <label>Nivel de Formación </label>
+                    <div class="ufps-dropdown" id="dropdown6">
+                      <button onclick="openDropdown('dropdown6')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Titulo Obtenido:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Titulo Obtenido:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Area de Conocimiento:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Centro Educativo:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Duración:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Fecha</label>
+                    <input type="date" placeholder=" " class="ufps-input">
+                  </div>
+
+
+                  <button class="ufps-btn ufps-btn-green " style="float: right;">Guardar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- fin tab3 -->
+
+    <div id="tab4" class="ufps-tab-content"> <!--tab 4 inicio -->
+      <div class="ufps-row" style="padding-top: 18px;" >
+        <div class="ufps-col-mobile-12 ufps-col-tablet-6 ufps-col-netbook-6">
+          <h1>Información Laboral </h1>
+          <div class="ufps-card" style="height:550px; width: 500px; border-radius: 2em; padding: 10px;">
+            <div class="ufps-card-caption">
+              <div class="ufps-col-mobile-12 ">
+                <form>
+                  <div class="form-group">
+                    <label>Empresa:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>País</label>
+                    <div class="ufps-dropdown" id="dropdown7">
+                      <button onclick="openDropdown('dropdown7')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label >Departamento</label>
+                    <div class="ufps-dropdown" id="dropdown8">
+                      <button onclick="openDropdown('dropdown8')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Cargo:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Area</label>
+                    <div class="ufps-dropdown" id="dropdown9">
+                      <button onclick="openDropdown('dropdown9')" class="ufps-dropdown-btn ufps-dropdown-light">Dropdown</button>
+                      <div class="ufps-dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Fecha Inicio:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Fecha Fin:</label>
+                    <input type="text" placeholder=" " class="ufps-input">
+                  </div>
+                  <div class="form-group">
+                    <label>Funciones Realizadas:</label>
+                    <input type="text" placeholder=" " class="ufps-input" style="height: 80px;">
+
+                  </div>
+                  <button class="ufps-btn ufps-btn-green " style="float: right;">Guardar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- fin tab 4 -->
+  </div> <!--fin Contenido de las tabs -->
+</div> <!--fin Container -->
